@@ -1,0 +1,22 @@
+export PATH=$PATH:/Users/shobhitbhardwaj/ShobhiT/Softwares/mongodb-4.4.6/bin/
+cd ShobhiT/Softwares/mongodb-4.4.6/bin
+mongod --config ../mongod.conf
+
+export PATH=$PATH:/Users/shobhitbhardwaj/ShobhiT/Softwares/mongodb-4.4.6/bin/
+mongo
+
+
+POST    -   http://localhost:3000/user
+GET     -   http://localhost:3000/users
+GET     -   http://localhost:3000/user/shobhit
+GET     -   http://localhost:3000/user?userName=shobhit&mobileNumber=9876543210&emailId=aaa@bbb.com&status=ACTIVE
+PUT     -   http://localhost:3000/user
+DELETE  -   http://localhost:3000/user
+
+{
+    "userName": "shobhit",
+    "password": "shobhit12345",
+    "mobileNumber": "9876543210",
+    "emailId": "aaa@bbb.com",
+    "status": "ACTIVE"
+}

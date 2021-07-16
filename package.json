@@ -1,0 +1,21 @@
+{
+  "name": "node-server-crud",
+  "version": "1.0.0",
+  "description": "NodeJs Basic CRUD Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shobhit Bhardwaj",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "mongoose": "^5.13.2"
+  }
+}
