@@ -5,6 +5,10 @@ mongod --config ../mongod.conf
 export PATH=$PATH:/Users/shobhitbhardwaj/ShobhiT/Softwares/mongodb-4.4.6/bin/
 mongo
 
+IP Address - ipconfig getifaddr en0
+
+npm run test/start/dev
+
 
 POST    -   http://localhost:3000/user
 GET     -   http://localhost:3000/users
@@ -20,3 +24,19 @@ DELETE  -   http://localhost:3000/user
     "emailId": "aaa@bbb.com",
     "status": "ACTIVE"
 }
+
+
+---------------     Docker Reference    ---------------
+
+docker build --tag=node-app .
+
+docker run -d -it -p 27017:27017 mongo
+
+docker run -p4000:3000  --name=node_app_1 node-app
+docker run -p5000:3000  --name=node_app_2 node-app
+
+docker stop node_app_1
+docker start node_app_1
+
+docker rm -f node_app_1
+docker image rm -f node-app

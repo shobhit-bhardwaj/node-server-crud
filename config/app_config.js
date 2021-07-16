@@ -4,7 +4,7 @@ var config = {
     dev : {
         port: 3000,
         mongoConfig: {
-            urlString: 'mongodb://localhost/node_app_db'
+            urlString: 'mongodb://192.168.29.148:27017/node_app_db'
         },
         logConfig : {
 			log_file_path : './log/node_app_log.log',
@@ -19,7 +19,7 @@ var config = {
     prod : {
         port: 5000,
         mongoConfig: {
-            urlString: 'mongodb://localhost/node_app_db'
+            urlString: 'mongodb://localhost:27017/node_app_db'
         },
         logConfig : {
 			log_file_path : './log/node_app_log.log',
